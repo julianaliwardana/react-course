@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // import styled from "styled-components";
 import logo from './logo.svg';
 import styles from './assets/text.module.css';
@@ -32,6 +32,10 @@ import './assets/style.css';
 function App() {
     const [count, setCount] = useState(0);
     const [name] = useState('Julian Alifirman Wardana');
+
+    useEffect(() => {
+        document.title = `${count} ${name}`;
+    });
 
     return (
         <div className="App">
