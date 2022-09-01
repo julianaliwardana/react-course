@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Footer from './components/Footer';
 // import styled from "styled-components";
 import logo from './logo.svg';
 import styles from './assets/text.module.css';
@@ -29,7 +30,7 @@ import './assets/style.css';
 //     border-radius: 3px;
 // `;
 
-function App() {
+function App(props) {
     const [count, setCount] = useState(0);
     const [name] = useState('Julian Alifirman Wardana');
 
@@ -60,6 +61,7 @@ function App() {
             Learn React
             </a>
         </header>
+        <Footer name={name} />
         </div>
     );
 }
