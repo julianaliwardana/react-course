@@ -1,0 +1,12 @@
+.App-header {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.header-text {
+    margin: 0;
+}

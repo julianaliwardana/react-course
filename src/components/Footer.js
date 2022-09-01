@@ -1,5 +1,5 @@
-import React from 'react';
-import './Footer.css'
+import { React, Component } from 'react';
+import './Footer.css';
 
 function UserGreeting(props) {
     return (
@@ -21,17 +21,16 @@ function BotGreeting() {
     );
 }
 
-function Footer(props) {
-        console.log('====================================');
-        console.log(props.name);
-        console.log('====================================');
-        const isPasses = props.name;
+class Footer extends Component {
+    render() {
+        const isPasses = this.props.name;
 
         if (isPasses) {
-            return <UserGreeting name={props.name}/>;
+            return <UserGreeting name={this.props.name}/>;
         } else {
-            return <BotGreeting />;
+            return <BotGreeting/>;
         }
+    }
 }
 
 export default Footer;
