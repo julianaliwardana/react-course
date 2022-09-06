@@ -1,8 +1,9 @@
 import React from 'react';
 import { ThemeContext, themes } from "./contexts/ThemeContext"
 import Header from './components/Header';
-import Main from './components/Main';
+// import Main from './components/Main';
 import Footer from './components/Footer';
+import FormPage from './components/FormPage/FormPage';
 
 class App extends React.Component {
 
@@ -29,7 +30,8 @@ class App extends React.Component {
             <ThemeContext.Provider value={this.state}>
                 <div className="App">
                     <Header />
-                    <Main />
+                    {/* <Main /> */}
+                    <FormPage />
                     <Footer name={this.state.name} />
                 </div>
             </ThemeContext.Provider>

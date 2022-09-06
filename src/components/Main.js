@@ -18,7 +18,7 @@ function Main() {
             <div className="left">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p className={styles.name}>
-                    Hello my name is {name}
+                    Hello my name is <br/> {name}
                 </p>
                 <p>
                     {count}
